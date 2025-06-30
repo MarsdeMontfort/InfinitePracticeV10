@@ -110,7 +110,7 @@ const mcqs = [
   },
   {
     type: "mcq",
-    question: "What is a hospital-acquired (nosocomial) infection?",
+    question: "What is a nosocomial infection?",
     choices: [
       "An infection caught in a healthcare setting like a hospital or nursing home",
       "A genetic disorder",
