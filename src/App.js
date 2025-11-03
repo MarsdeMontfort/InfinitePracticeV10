@@ -5145,27 +5145,30 @@ export default function App() {
     return (
       <div
         style={{
-          background: "#f0f4f7",
+          background: "linear-gradient(to bottom right, #f8fafc, #e0e7ff, #ddd6fe)",
           minHeight: "100vh",
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
         }}
         key={resetKey}
       >
         <div
           style={{
-            background: "#1e4ba4",
-            height: "48px",
+            background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            height: "64px",
             display: "flex",
             alignItems: "center",
-            padding: "0 24px",
+            padding: "0 32px",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.15)",
           }}
         >
           <h1
             style={{
               color: "white",
-              fontSize: "20px",
+              fontSize: "24px",
               margin: 0,
-              fontWeight: "600",
+              fontWeight: "700",
+              letterSpacing: "-0.5px",
+              textShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
             }}
           >
             InfinitePractice MCB4271/5270 Exam 1
@@ -5181,22 +5184,23 @@ export default function App() {
             }}
           >
             {/* DIAGNOSTIC BUTTON */}
-            <div style={{ marginBottom: "28px" }}>
+            <div style={{ marginBottom: "32px" }}>
               <button
                 onClick={startDiagnostic}
                 style={{
                   width: "100%",
-                  padding: "18px",
-                  fontSize: "22px",
+                  padding: "20px",
+                  fontSize: "20px",
                   fontWeight: "700",
-                  background: "#16a34a",
+                  background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
                   color: "white",
                   border: "none",
                   borderRadius: "16px",
                   cursor: "pointer",
                   textTransform: "uppercase",
                   letterSpacing: "0.5px",
-                  marginBottom: "10px",
+                  marginBottom: "12px",
+                  boxShadow: "0 8px 20px rgba(16, 185, 129, 0.3)",
                 }}
                 aria-label="Start Diagnostic Test"
               >
@@ -5205,9 +5209,10 @@ export default function App() {
               <div
                 style={{
                   textAlign: "center",
-                  color: "#15803d",
-                  fontSize: "16px",
+                  color: "#059669",
+                  fontSize: "15px",
                   marginBottom: "6px",
+                  fontWeight: "500",
                 }}
               >
                 30-question snapshot, proportionally covers all categories. Does
@@ -5215,51 +5220,52 @@ export default function App() {
               </div>
             </div>
             {/* ...rest of your setup UI, UNCHANGED... */}
-            <div style={{ marginBottom: "24px" }}>
+            <div style={{ marginBottom: "28px" }}>
               <span
-                style={{ fontWeight: "600", color: "#333", fontSize: "18px" }}
+                style={{ fontWeight: "700", color: "#1f2937", fontSize: "18px" }}
               >
                 Test Mode
               </span>
-              <div style={{ display: "flex", gap: "24px", marginTop: "8px" }}>
+              <div style={{ display: "flex", gap: "24px", marginTop: "12px" }}>
                 <label
-                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
+                  style={{ display: "flex", alignItems: "center", gap: "10px", cursor: "pointer" }}
                 >
                   <input type="radio" name="mode" defaultChecked />
-                  <span style={{ color: "#1e4ba4", fontWeight: "500" }}>
+                  <span style={{ color: "#4f46e5", fontWeight: "600", fontSize: "16px" }}>
                     Tutor
                   </span>
                 </label>
               </div>
             </div>
             {/* Question Status */}
-            <div style={{ marginBottom: "24px" }}>
+            <div style={{ marginBottom: "28px" }}>
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: "8px",
-                  marginBottom: "12px",
+                  gap: "12px",
+                  marginBottom: "16px",
                 }}
               >
-                <span style={{ fontWeight: "600", color: "#333" }}>
+                <span style={{ fontWeight: "700", color: "#1f2937", fontSize: "18px" }}>
                   Question Status
                 </span>
                 <span
                   style={{
-                    color: "#666",
-                    fontSize: "14px",
+                    color: "#6b7280",
+                    fontSize: "15px",
                     marginLeft: "8px",
                   }}
                 >
                   Total Available{" "}
                   <span
                     style={{
-                      background: "#e8f0ff",
-                      color: "#1e4ba4",
-                      padding: "2px 8px",
-                      borderRadius: "4px",
-                      fontWeight: "600",
+                      background: "linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%)",
+                      color: "#4f46e5",
+                      padding: "4px 12px",
+                      borderRadius: "8px",
+                      fontWeight: "700",
+                      boxShadow: "0 2px 8px rgba(79, 70, 229, 0.15)",
                     }}
                   >
                     {pool.length}
@@ -5268,68 +5274,72 @@ export default function App() {
               </div>
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                 <div
-                  style={{ display: "flex", alignItems: "center", gap: "6px" }}
+                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
                 >
-                  <span>Unused</span>
+                  <span style={{ fontWeight: "500", color: "#374151" }}>Unused</span>
                   <span
                     style={{
-                      background: "#e8f0ff",
-                      color: "#1e4ba4",
-                      padding: "2px 8px",
-                      borderRadius: "4px",
-                      fontSize: "13px",
-                      fontWeight: "600",
+                      background: "linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%)",
+                      color: "#4f46e5",
+                      padding: "4px 10px",
+                      borderRadius: "8px",
+                      fontSize: "14px",
+                      fontWeight: "700",
+                      boxShadow: "0 2px 6px rgba(79, 70, 229, 0.15)",
                     }}
                   >
                     {statusCounts.unused}
                   </span>
                 </div>
                 <div
-                  style={{ display: "flex", alignItems: "center", gap: "6px" }}
+                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
                 >
-                  <span>Incorrect</span>
+                  <span style={{ fontWeight: "500", color: "#374151" }}>Incorrect</span>
                   <span
                     style={{
-                      background: "#fee",
-                      color: "#c33",
-                      padding: "2px 8px",
-                      borderRadius: "4px",
-                      fontSize: "13px",
-                      fontWeight: "600",
+                      background: "linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)",
+                      color: "#dc2626",
+                      padding: "4px 10px",
+                      borderRadius: "8px",
+                      fontSize: "14px",
+                      fontWeight: "700",
+                      boxShadow: "0 2px 6px rgba(220, 38, 38, 0.15)",
                     }}
                   >
                     {statusCounts.incorrect}
                   </span>
                 </div>
                 <div
-                  style={{ display: "flex", alignItems: "center", gap: "6px" }}
+                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
                 >
-                  <span>Marked</span>
+                  <span style={{ fontWeight: "500", color: "#374151" }}>Marked</span>
                   <span
                     style={{
-                      background: "#fef3c7",
+                      background: "linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)",
                       color: "#92400e",
-                      padding: "2px 8px",
-                      borderRadius: "4px",
-                      fontSize: "13px",
-                      fontWeight: "600",
+                      padding: "4px 10px",
+                      borderRadius: "8px",
+                      fontSize: "14px",
+                      fontWeight: "700",
+                      boxShadow: "0 2px 6px rgba(146, 64, 14, 0.15)",
                     }}
                   >
                     {statusCounts.marked}
                   </span>
                 </div>
                 <div
-                  style={{ display: "flex", alignItems: "center", gap: "6px" }}
+                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
                 >
-                  <span>Correct</span>
+                  <span style={{ fontWeight: "500", color: "#374151" }}>Correct</span>
                   <span
                     style={{
-                      background: "#d1fae5",
+                      background: "linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%)",
                       color: "#065f46",
-                      padding: "2px 8px",
-                      borderRadius: "4px",
-                      fontSize: "13px",
-                      fontWeight: "600",
+                      padding: "4px 10px",
+                      borderRadius: "8px",
+                      fontSize: "14px",
+                      fontWeight: "700",
+                      boxShadow: "0 2px 6px rgba(6, 95, 70, 0.15)",
                     }}
                   >
                     {statusCounts.correct}
@@ -5338,17 +5348,17 @@ export default function App() {
               </div>
             </div>
             {/* Category Selector */}
-            <div style={{ marginBottom: "24px" }}>
+            <div style={{ marginBottom: "28px" }}>
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-between",
-                  marginBottom: "12px",
+                  marginBottom: "16px",
                 }}
               >
                 <div
-                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
+                  style={{ display: "flex", alignItems: "center", gap: "12px" }}
                 >
                   <input
                     type="checkbox"
@@ -5360,19 +5370,22 @@ export default function App() {
                         : "Select all categories"
                     }
                   />
-                  <span style={{ fontWeight: "600", color: "#333" }}>
+                  <span style={{ fontWeight: "700", color: "#1f2937", fontSize: "18px" }}>
                     Subjects
                   </span>
                 </div>
                 <button
                   onClick={toggleAll}
                   style={{
-                    background: "none",
+                    background: "linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%)",
                     border: "none",
-                    color: "#1e4ba4",
+                    color: "#4f46e5",
                     cursor: "pointer",
                     fontSize: "14px",
-                    textDecoration: "underline",
+                    fontWeight: "600",
+                    padding: "6px 14px",
+                    borderRadius: "8px",
+                    boxShadow: "0 2px 6px rgba(79, 70, 229, 0.2)",
                   }}
                   aria-label={
                     selectedCats.size === ALL_CATEGORIES.length
@@ -5399,9 +5412,17 @@ export default function App() {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      gap: "8px",
+                      gap: "10px",
                       cursor: "pointer",
-                      padding: "6px 0",
+                      padding: "10px 12px",
+                      borderRadius: "10px",
+                      background: selectedCats.has(cat)
+                        ? "linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)"
+                        : "transparent",
+                      border: selectedCats.has(cat)
+                        ? "2px solid #0ea5e9"
+                        : "2px solid transparent",
+                      transition: "all 0.2s ease",
                     }}
                   >
                     <input
@@ -5409,15 +5430,20 @@ export default function App() {
                       checked={selectedCats.has(cat)}
                       onChange={() => toggleCategory(cat)}
                     />
-                    <span style={{ flex: 1 }}>{cat}</span>
+                    <span style={{ flex: 1, fontWeight: "500", color: "#374151" }}>{cat}</span>
                     <span
                       style={{
-                        background: "#e8f0ff",
-                        color: "#1e4ba4",
-                        padding: "2px 8px",
-                        borderRadius: "4px",
+                        background: selectedCats.has(cat)
+                          ? "linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)"
+                          : "#e5e7eb",
+                        color: selectedCats.has(cat) ? "white" : "#6b7280",
+                        padding: "3px 10px",
+                        borderRadius: "8px",
                         fontSize: "13px",
-                        fontWeight: "600",
+                        fontWeight: "700",
+                        boxShadow: selectedCats.has(cat)
+                          ? "0 2px 6px rgba(14, 165, 233, 0.3)"
+                          : "none",
                       }}
                     >
                       {getCategoryCount(cat)}
@@ -5430,10 +5456,11 @@ export default function App() {
             <div style={{ marginBottom: "32px" }}>
               <label
                 style={{
-                  fontWeight: "600",
-                  color: "#333",
+                  fontWeight: "700",
+                  color: "#1f2937",
+                  fontSize: "18px",
                   display: "block",
-                  marginBottom: "8px",
+                  marginBottom: "12px",
                 }}
               >
                 No. of Questions
@@ -5461,11 +5488,14 @@ export default function App() {
                     setNumQuestions(clamped);
                   }}
                   style={{
-                    width: "80px",
-                    padding: "8px 12px",
-                    border: "1px solid #d1d5db",
-                    borderRadius: "6px",
-                    fontSize: "16px",
+                    width: "90px",
+                    padding: "10px 16px",
+                    border: "2px solid #4f46e5",
+                    borderRadius: "10px",
+                    fontSize: "18px",
+                    fontWeight: "600",
+                    color: "#1f2937",
+                    background: "white",
                   }}
                   aria-label="Number of questions"
                   inputMode="numeric"
@@ -5493,22 +5523,26 @@ export default function App() {
               }
               style={{
                 width: "100%",
-                padding: "16px",
-                fontSize: "18px",
-                fontWeight: "600",
+                padding: "18px",
+                fontSize: "20px",
+                fontWeight: "700",
                 background:
                   selectedCats.size === 0 || pool.length === 0
-                    ? "#ccc"
-                    : "#4b94e6",
+                    ? "#d1d5db"
+                    : "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
                 color: "white",
                 border: "none",
-                borderRadius: "8px",
+                borderRadius: "14px",
                 cursor:
                   selectedCats.size === 0 || pool.length === 0
                     ? "not-allowed"
                     : "pointer",
                 textTransform: "uppercase",
-                letterSpacing: "0.5px",
+                letterSpacing: "1px",
+                boxShadow:
+                  selectedCats.size === 0 || pool.length === 0
+                    ? "none"
+                    : "0 8px 24px rgba(79, 70, 229, 0.4)",
               }}
               aria-label="Generate Test"
             >
@@ -5544,22 +5578,23 @@ export default function App() {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
-                  marginBottom: "16px",
+                  marginBottom: "20px",
                 }}
               >
-                <h3 style={{ margin: 0, color: "#333" }}>
+                <h3 style={{ margin: 0, color: "#1f2937", fontSize: "20px", fontWeight: "700" }}>
                   Performance Statistics
                 </h3>
-                <div style={{ display: "flex", gap: "8px" }}>
+                <div style={{ display: "flex", gap: "10px" }}>
                   <button
                     onClick={resetStats}
                     style={{
-                      background: "none",
-                      border: "1px solid #dc2626",
+                      background: "linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)",
+                      border: "2px solid #dc2626",
                       color: "#dc2626",
-                      padding: "4px 12px",
-                      borderRadius: "4px",
+                      padding: "6px 16px",
+                      borderRadius: "8px",
                       fontSize: "14px",
+                      fontWeight: "600",
                       cursor: "pointer",
                     }}
                     aria-label="Reset statistics"
@@ -5569,12 +5604,13 @@ export default function App() {
                   <button
                     onClick={resetQbank}
                     style={{
-                      background: "none",
-                      border: "1px solid #1e4ba4",
-                      color: "#1e4ba4",
-                      padding: "4px 12px",
-                      borderRadius: "4px",
+                      background: "linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%)",
+                      border: "2px solid #4f46e5",
+                      color: "#4f46e5",
+                      padding: "6px 16px",
+                      borderRadius: "8px",
                       fontSize: "14px",
+                      fontWeight: "600",
                       cursor: "pointer",
                     }}
                     aria-label="Reset Qbank"
@@ -6153,42 +6189,47 @@ export default function App() {
     return (
       <div
         style={{
-          background: "#f0f4f7",
+          background: "linear-gradient(to bottom right, #f8fafc, #e0e7ff, #ddd6fe)",
           minHeight: "100vh",
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
         }}
       >
         <div
           style={{
-            background: "#1e4ba4",
-            height: "48px",
+            background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            height: "64px",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            padding: "0 24px",
+            padding: "0 32px",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.15)",
           }}
         >
           <h1
             style={{
               color: "white",
-              fontSize: "20px",
+              fontSize: "24px",
               margin: 0,
-              fontWeight: "600",
+              fontWeight: "700",
+              letterSpacing: "-0.5px",
+              textShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
             }}
           >
             InfinitePractice
           </h1>
           <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-            <span style={{ color: "white", fontSize: "16px" }}>
+            <span style={{ color: "white", fontSize: "17px", fontWeight: "600" }}>
               Question {currentIdx + 1} of {testQuestions.length}
             </span>
             <span
               style={{
                 color: "white",
                 fontSize: "14px",
-                background: "rgba(255,255,255,0.2)",
-                padding: "2px 8px",
-                borderRadius: "4px",
+                background: "rgba(255,255,255,0.25)",
+                padding: "6px 14px",
+                borderRadius: "10px",
+                fontWeight: "600",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.15)",
               }}
             >
               {Object.keys(userAnswers).filter((k) => !!userAnswers[k]).length}{" "}
@@ -6200,16 +6241,17 @@ export default function App() {
           style={{
             maxWidth: "900px",
             margin: "0 auto",
-            padding: "24px",
+            padding: "32px",
           }}
         >
           <div
             style={{
               background: "white",
-              borderRadius: "12px",
-              padding: "32px",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+              borderRadius: "20px",
+              padding: "40px",
+              boxShadow: "0 20px 60px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.1)",
               minHeight: "500px",
+              border: "1px solid rgba(255, 255, 255, 0.8)",
             }}
           >
             <div
@@ -6225,13 +6267,14 @@ export default function App() {
                 onClick={prevQuestion}
                 disabled={currentIdx === 0}
                 style={{
-                  padding: "8px 16px",
-                  background: currentIdx === 0 ? "#e5e7eb" : "#4b94e6",
+                  padding: "10px 20px",
+                  background: currentIdx === 0 ? "#e5e7eb" : "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
                   color: currentIdx === 0 ? "#9ca3af" : "white",
                   border: "none",
-                  borderRadius: "6px",
+                  borderRadius: "10px",
                   cursor: currentIdx === 0 ? "not-allowed" : "pointer",
-                  fontWeight: "500",
+                  fontWeight: "600",
+                  boxShadow: currentIdx === 0 ? "none" : "0 4px 12px rgba(79, 70, 229, 0.3)",
                 }}
                 aria-label="Previous question"
               >
@@ -6240,13 +6283,14 @@ export default function App() {
               <button
                 onClick={toggleMark}
                 style={{
-                  padding: "8px 16px",
-                  background: isMarked ? "#fef3c7" : "#f3f4f6",
+                  padding: "10px 20px",
+                  background: isMarked ? "linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)" : "linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%)",
                   color: isMarked ? "#92400e" : "#374151",
-                  border: `1px solid ${isMarked ? "#fcd34d" : "#d1d5db"}`,
-                  borderRadius: "6px",
+                  border: `2px solid ${isMarked ? "#fcd34d" : "#d1d5db"}`,
+                  borderRadius: "10px",
                   cursor: "pointer",
-                  fontWeight: "500",
+                  fontWeight: "600",
+                  boxShadow: isMarked ? "0 4px 12px rgba(252, 211, 77, 0.3)" : "none",
                 }}
                 aria-label={isMarked ? "Unmark question" : "Mark question"}
                 title="Press 'M' to mark/unmark"
@@ -6256,13 +6300,14 @@ export default function App() {
               <button
                 onClick={nextQuestion}
                 style={{
-                  padding: "8px 16px",
-                  background: "#4b94e6",
+                  padding: "10px 20px",
+                  background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
                   color: "white",
                   border: "none",
-                  borderRadius: "6px",
+                  borderRadius: "10px",
                   cursor: "pointer",
-                  fontWeight: "500",
+                  fontWeight: "600",
+                  boxShadow: "0 4px 12px rgba(79, 70, 229, 0.3)",
                 }}
                 aria-label={
                   currentIdx + 1 < testQuestions.length
@@ -6273,12 +6318,14 @@ export default function App() {
                 {currentIdx + 1 < testQuestions.length ? "Next →" : "Finish"}
               </button>
             </div>
-            <div style={{ marginBottom: "24px" }}>
+            <div style={{ marginBottom: "28px" }}>
               <p
                 style={{
-                  fontSize: "18px",
-                  lineHeight: "1.6",
+                  fontSize: "19px",
+                  lineHeight: "1.7",
                   marginBottom: "20px",
+                  color: "#1f2937",
+                  fontWeight: "500",
                 }}
               >
                 {q.question}
@@ -6292,19 +6339,24 @@ export default function App() {
                 let bgColor = "#fff";
                 let borderColor = "#d1d5db";
                 let textColor = "#374151";
+                let boxShadow = "0 2px 6px rgba(0, 0, 0, 0.05)";
                 if (showResult) {
                   if (letter === q.answer) {
-                    bgColor = "#d1fae5";
-                    borderColor = "#34d399";
+                    bgColor = "linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%)";
+                    borderColor = "#10b981";
                     textColor = "#065f46";
+                    boxShadow = "0 4px 12px rgba(16, 185, 129, 0.3)";
                   } else if (isSelected && !isCorrect) {
-                    bgColor = "#fee2e2";
-                    borderColor = "#f87171";
+                    bgColor = "linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)";
+                    borderColor = "#ef4444";
                     textColor = "#991b1b";
+                    boxShadow = "0 4px 12px rgba(239, 68, 68, 0.3)";
                   }
                 } else if (isSelected) {
-                  bgColor = "#dbeafe";
+                  bgColor = "linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)";
                   borderColor = "#3b82f6";
+                  textColor = "#1e40af";
+                  boxShadow = "0 4px 12px rgba(59, 130, 246, 0.3)";
                 }
                 return (
                   <button
@@ -6314,17 +6366,19 @@ export default function App() {
                     style={{
                       display: "block",
                       width: "100%",
-                      padding: "16px",
-                      marginBottom: "12px",
+                      padding: "18px 20px",
+                      marginBottom: "14px",
                       background: bgColor,
                       border: `2px solid ${borderColor}`,
-                      borderRadius: "8px",
+                      borderRadius: "12px",
                       textAlign: "left",
                       cursor: user ? "default" : "pointer",
-                      fontSize: "16px",
+                      fontSize: "17px",
                       color: textColor,
                       transition: "all 0.2s",
                       position: "relative",
+                      fontWeight: "500",
+                      boxShadow: boxShadow,
                     }}
                     aria-label={choice}
                   >
@@ -6584,14 +6638,16 @@ export default function App() {
                   setCurrentIdx(0);
                 }}
                 style={{
-                  padding: "12px 32px",
-                  background: "#4b94e6",
+                  padding: "14px 36px",
+                  background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
                   color: "white",
                   border: "none",
-                  borderRadius: "6px",
+                  borderRadius: "12px",
                   cursor: "pointer",
-                  fontWeight: "600",
+                  fontWeight: "700",
                   fontSize: "16px",
+                  letterSpacing: "0.5px",
+                  boxShadow: "0 6px 20px rgba(79, 70, 229, 0.4)",
                 }}
                 aria-label="Create new test"
               >
@@ -6603,14 +6659,16 @@ export default function App() {
                   setStage("quiz");
                 }}
                 style={{
-                  padding: "12px 32px",
-                  background: "#fff",
-                  color: "#4b94e6",
-                  border: "2px solid #4b94e6",
-                  borderRadius: "6px",
+                  padding: "14px 36px",
+                  background: "white",
+                  color: "#4f46e5",
+                  border: "2px solid #4f46e5",
+                  borderRadius: "12px",
                   cursor: "pointer",
-                  fontWeight: "600",
+                  fontWeight: "700",
                   fontSize: "16px",
+                  letterSpacing: "0.5px",
+                  boxShadow: "0 4px 12px rgba(79, 70, 229, 0.2)",
                 }}
                 aria-label="Review test"
               >
