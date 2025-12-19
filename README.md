@@ -6,6 +6,7 @@ Educational mnemonic generator with AI-powered video narration.
 
 - **[Video Player API Documentation](./VIDEO_PLAYER_API.md)** - Comprehensive API reference for the video player component
 - **[Video Player Quick Reference](./VIDEO_PLAYER_QUICK_REF.md)** - Quick start guide and developer reference
+- **[Video Player Architecture](./VIDEO_PLAYER_ARCHITECTURE.md)** - System architecture, data flow, and technical diagrams
 
 ## Features
 
